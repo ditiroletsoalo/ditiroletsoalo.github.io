@@ -42,10 +42,10 @@
   }
 
   /* ---------- Sidebar ---------- */
-  .side { background: var(--navy); color: var(--side-tx); padding: 12mm 8mm; }
+  .side { background: var(--navy); color: var(--side-tx); padding: 11mm 8mm; }
   .photo-wrap { display: flex; justify-content: center; margin-bottom: 6mm; }
   .photo {
-    width: 42mm; height: 42mm; border-radius: 50%; object-fit: cover; object-position: 50% 20%;
+    width: 36mm; height: 36mm; border-radius: 50%; object-fit: cover; object-position: 50% 20%;
     border: 2px solid var(--gold-br); padding: 3px; background: var(--navy-2);
   }
   .side .name { font-family: var(--serif); font-size: 25px; line-height: 1.05; color: #fff; text-align: center; letter-spacing: .01em; }
@@ -53,7 +53,7 @@
 
   .side h3 {
     font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
-    color: var(--gold-br); margin: 6mm 0 3mm; padding-bottom: 6px; border-bottom: 1px solid var(--side-line);
+    color: var(--gold-br); margin: 5mm 0 2.5mm; padding-bottom: 6px; border-bottom: 1px solid var(--side-line);
   }
   .contact { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
   .contact li { display: flex; align-items: center; gap: 9px; font-size: 11px; line-height: 1.35; word-break: break-word; }
@@ -61,7 +61,7 @@
   .contact .ic svg { width: 100%; height: 100%; fill: currentColor; display: block; }
   .contact a { color: var(--side-tx); text-decoration: none; }
 
-  .about { font-size: 11.3px; line-height: 1.55; color: #cdd7ea; }
+  .about { font-size: 10.8px; line-height: 1.46; color: #cdd7ea; }
 
   .chips { display: flex; flex-wrap: wrap; gap: 5px; }
   .chip { font-family: var(--mono); font-size: 9.5px; letter-spacing: .02em; color: #e9eefa;
@@ -77,32 +77,32 @@
   .awd .dim { color: var(--side-mut); }
 
   /* ---------- Main column ---------- */
-  .main { padding: 12mm 12mm; }
-  .main section { margin-bottom: 5mm; }
+  .main { padding: 10mm 12mm; }
+  .main section { margin-bottom: 4mm; }
   .main section:last-child { margin-bottom: 0; }
   .main h2 {
-    font-family: var(--serif); font-size: 17px; color: var(--navy); margin: 0 0 3mm;
+    font-family: var(--serif); font-size: 16px; color: var(--navy); margin: 0 0 2.5mm;
     padding-bottom: 4px; border-bottom: 2px solid var(--gold); letter-spacing: .01em;
   }
 
-  .entry { display: grid; grid-template-columns: 22mm 1fr; gap: 5mm; margin-bottom: 3.5mm; }
+  .entry { display: grid; grid-template-columns: 22mm 1fr; gap: 5mm; margin-bottom: 2.5mm; }
   .entry:last-child { margin-bottom: 0; }
   .entry .when { font-family: var(--mono); font-size: 9.5px; color: var(--muted); letter-spacing: .02em; line-height: 1.5; padding-top: 2px; }
   .entry .h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .entry .t { font-size: 12.5px; font-weight: 700; color: var(--ink); }
   .entry .org { font-size: 11px; color: var(--muted); font-style: italic; text-align: right; }
   .entry ul { margin: 3px 0 0; padding-left: 15px; }
-  .entry li { font-size: 11px; line-height: 1.45; color: #35435e; margin-bottom: 2px; }
-  .entry .desc { font-size: 11px; line-height: 1.45; color: #35435e; margin-top: 3px; }
+  .entry li { font-size: 10.5px; line-height: 1.36; color: #35435e; margin-bottom: 1px; }
+  .entry .desc { font-size: 10.5px; line-height: 1.36; color: #35435e; margin-top: 2px; }
   .entry a { color: var(--gold); text-decoration: none; font-family: var(--mono); font-size: 10px; word-break: break-all; }
-  .entry .plinks { display: flex; flex-wrap: wrap; gap: 5mm; margin-top: 5px; }
+  .entry .plinks { display: flex; flex-wrap: wrap; gap: 5mm; margin-top: 3px; }
   .entry .plinks a { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .02em; color: var(--gold); text-decoration: none; white-space: nowrap; word-break: normal; }
   .entry .plinks a:hover { text-decoration: underline; }
 
   .badge { font-family: var(--mono); font-size: 8.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
     background: var(--gold); color: #fff; border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
 
-  .also { font-size: 10.5px; color: var(--muted); line-height: 1.5; margin-top: 1mm; }
+  .also { font-size: 9.3px; color: var(--muted); line-height: 1.45; margin-top: 1mm; }
   .also a { color: var(--gold); text-decoration: none; font-family: var(--mono); }
 
   @media print {
@@ -133,7 +133,7 @@
     </ul>
 
     <h3>About Me</h3>
-    <p class="about">MSc Statistics &amp; Data Science candidate at UCT and a Business Intelligence Engineer at Yoyo Group. I build interpretable models and the dashboards that ship them — and I make the story land as hard as the numbers. Winner of the Predictive Insights youth-employment hackathon and a special mention at FNB DataQuest 2026.</p>
+    <p class="about">MSc Statistics &amp; Data Science candidate at UCT and a BI Engineer at Yoyo Group. I build interpretable models and the dashboards that ship them — and make the story land as hard as the numbers.</p>
 
     <h3>Technical Skills</h3>
     <div class="chips">
@@ -199,7 +199,7 @@
         <div>
           <div class="h"><span class="t">Sub-Warden</span><span class="org">Kilindini Residence, UCT</span></div>
           <ul>
-            <li>Supported residence management, student well-being and a safe, inclusive environment; mentored students through academic and personal challenges.</li>
+            <li>Supported residence management and student well-being; mentored students through academic and personal challenges.</li>
           </ul>
         </div>
       </div>
@@ -229,7 +229,7 @@
         <div class="when">2026</div>
         <div>
           <div class="h"><span class="t">Credit Risk Analytics Platform</span><span class="badge">Special Mention · FNB DataQuest</span></div>
-          <div class="desc">A regulation-first credit scorecard (Basel IV / National Credit Act): logistic regression enhanced with natural cubic splines and a Youden's-J cut-off, plus an embedded AI analyst that interprets results for the user. Built in R &amp; Shiny.</div>
+          <div class="desc">A regulation-first credit scorecard (Basel IV / NCA): splined logistic regression with a Youden's-J cut-off, plus an embedded AI analyst that interprets results for the user. R &amp; Shiny.</div>
           <div class="plinks">
             <a href="https://ditiroletsoalo.shinyapps.io/DataQuest26-CreditRisk/">Live Dashboard ↗</a>
             <a href="https://github.com/ditiroletsoalo/DataQuest2026-CreditRisk">GitHub ↗</a>
@@ -240,7 +240,7 @@
         <div class="when">2024</div>
         <div>
           <div class="h"><span class="t">Youth Employment Prediction</span><span class="badge">Winner · Predictive Insights</span></div>
-          <div class="desc">Forecasting youth employment outcomes for Predictive Insights (Team MaBosso) using LightGBM, neural networks and time-series features — winner of the competition, with a 3rd-place finish on the Kaggle leaderboard. Python.</div>
+          <div class="desc">Forecasting youth employment for Predictive Insights (Team MaBosso) with LightGBM, neural networks and time-series features. Competition winner; 3rd on the Kaggle leaderboard. Python.</div>
           <div class="plinks">
             <a href="https://github.com/ditiroletsoalo/Youth-Employment-Prediction">GitHub ↗</a>
           </div>
@@ -250,7 +250,7 @@
         <div class="when">2026</div>
         <div>
           <div class="h"><span class="t">Ditiro's Analytical Agent</span></div>
-          <div class="desc">A deployed conversational LLM agent — my AI-engineering proving ground, and the practice that led to the in-dashboard analyst in the credit-risk platform. R &amp; Shiny.</div>
+          <div class="desc">A deployed conversational LLM agent — the AI-engineering practice that led to the in-dashboard analyst in the credit-risk platform above. R &amp; Shiny.</div>
           <div class="plinks">
             <a href="https://ditiroletsoalo.shinyapps.io/ditiro/">Live Demo ↗</a>
             <a href="https://github.com/ditiroletsoalo/DT-Agent">GitHub ↗</a>
@@ -261,13 +261,13 @@
         <div class="when">2025</div>
         <div>
           <div class="h"><span class="t">Mean-Variance Hedging with Neural Networks &amp; VAR</span></div>
-          <div class="desc">Approximating optimal hedging strategies with neural networks under a vector-autoregression model of the market. Python.</div>
+          <div class="desc">Neural-network approximation of optimal hedging strategies under a vector-autoregression model of the market. Python.</div>
           <div class="plinks">
             <a href="https://github.com/ditiroletsoalo/Mean-Variance-Hedging-with-NN-using-VAR">GitHub ↗</a>
           </div>
         </div>
       </div>
-      <p class="also"><b>Also:</b> Prescient Coding Challenge 2024 · Multivariate Statistics · Job Success Prediction — <a href="https://github.com/ditiroletsoalo">more on GitHub</a></p>
+      <p class="also"><b>Also:</b> Prescient Coding Challenge · Multivariate Statistics — <a href="https://github.com/ditiroletsoalo">more on GitHub</a></p>
     </section>
 
   </main>
