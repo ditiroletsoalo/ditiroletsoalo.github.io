@@ -89,6 +89,9 @@
   .entry li { font-size: 11px; line-height: 1.45; color: #35435e; margin-bottom: 2px; }
   .entry .desc { font-size: 11px; line-height: 1.45; color: #35435e; margin-top: 3px; }
   .entry a { color: var(--gold); text-decoration: none; font-family: var(--mono); font-size: 10px; word-break: break-all; }
+  .entry .plinks { display: flex; flex-wrap: wrap; gap: 5mm; margin-top: 5px; }
+  .entry .plinks a { font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .02em; color: var(--gold); text-decoration: none; white-space: nowrap; word-break: normal; }
+  .entry .plinks a:hover { text-decoration: underline; }
 
   .badge { font-family: var(--mono); font-size: 8.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
     background: var(--gold); color: #fff; border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
@@ -212,7 +215,10 @@
         <div>
           <div class="h"><span class="t">Credit Risk Analytics Platform</span><span class="badge">Special Mention · FNB DataQuest</span></div>
           <div class="desc">A regulation-first credit scorecard (Basel IV / National Credit Act): logistic regression enhanced with natural cubic splines and a Youden's-J cut-off, plus an embedded AI analyst that interprets results for the user. Built in R &amp; Shiny.</div>
-          <a href="https://ditiroletsoalo.shinyapps.io/DataQuest26-CreditRisk/">ditiroletsoalo.shinyapps.io/DataQuest26-CreditRisk</a>
+          <div class="plinks">
+            <a href="https://ditiroletsoalo.shinyapps.io/DataQuest26-CreditRisk/">Live Dashboard ↗</a>
+            <a href="https://github.com/ditiroletsoalo/DataQuest2026-CreditRisk">GitHub ↗</a>
+          </div>
         </div>
       </div>
       <div class="entry">
@@ -220,15 +226,20 @@
         <div>
           <div class="h"><span class="t">Youth Employment Prediction</span><span class="badge">Winner · Predictive Insights</span></div>
           <div class="desc">Forecasting youth employment outcomes for Predictive Insights (Team MaBosso) using LightGBM, neural networks and time-series features — winner of the competition, with a 3rd-place finish on the Kaggle leaderboard. Python.</div>
-          <a href="https://github.com/ditiroletsoalo/Youth-Employment-Prediction">github.com/ditiroletsoalo/Youth-Employment-Prediction</a>
+          <div class="plinks">
+            <a href="https://github.com/ditiroletsoalo/Youth-Employment-Prediction">GitHub ↗</a>
+          </div>
         </div>
       </div>
       <div class="entry">
         <div class="when">2026</div>
         <div>
           <div class="h"><span class="t">Ditiro's Analytical Agent</span></div>
-          <div class="desc">A deployed conversational LLM agent — my AI-engineering proving ground, and the practice that led to the in-dashboard analyst in the credit-risk platform. Full write-up and demo on my portfolio. R &amp; Shiny.</div>
-          <a href="https://ditiroletsoalo.github.io">ditiroletsoalo.github.io</a>
+          <div class="desc">A deployed conversational LLM agent — my AI-engineering proving ground, and the practice that led to the in-dashboard analyst in the credit-risk platform. R &amp; Shiny.</div>
+          <div class="plinks">
+            <a href="https://ditiroletsoalo.shinyapps.io/ditiro/">Live Demo ↗</a>
+            <a href="https://github.com/ditiroletsoalo/DT-Agent">GitHub ↗</a>
+          </div>
         </div>
       </div>
       <div class="entry">
@@ -236,7 +247,9 @@
         <div>
           <div class="h"><span class="t">Mean-Variance Hedging with Neural Networks &amp; VAR</span></div>
           <div class="desc">Approximating optimal hedging strategies with neural networks under a vector-autoregression model of the market. Python.</div>
-          <a href="https://github.com/ditiroletsoalo/Mean-Variance-Hedging-with-NN-using-VAR">github.com/ditiroletsoalo/Mean-Variance-Hedging-with-NN-using-VAR</a>
+          <div class="plinks">
+            <a href="https://github.com/ditiroletsoalo/Mean-Variance-Hedging-with-NN-using-VAR">GitHub ↗</a>
+          </div>
         </div>
       </div>
       <p class="also"><b>Also:</b> Prescient Coding Challenge 2024 · Multivariate Statistics · Job Success Prediction — <a href="https://github.com/ditiroletsoalo">more on GitHub</a></p>
