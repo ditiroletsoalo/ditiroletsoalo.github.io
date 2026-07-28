@@ -37,7 +37,8 @@
     display: grid;
     grid-template-columns: 74mm 1fr;
     box-shadow: 0 18px 50px -18px rgba(0,0,0,.5);
-    overflow: hidden;
+    overflow: visible;
+    border-radius: 2px;
   }
 
   /* ---------- Sidebar ---------- */
@@ -101,8 +102,10 @@
 
   @media print {
     body { background: #fff; padding: 0; }
-    .cv { box-shadow: none; width: 100%; min-height: 100vh; }
+    .cv { box-shadow: none; width: 100%; min-height: auto; border-radius: 0; }
     @page { size: A4; margin: 0; }
+    .entry, .main section, .about, .chips, .slist { break-inside: avoid; }
+    .main h2 { break-after: avoid; }
     html, body, .cv, .side, .badge, .chip { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 </style>
